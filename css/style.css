@@ -1,0 +1,40 @@
+/***** Genral **********/
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color-primary: rgb(255, 177, 32);
+    --color-secondary: rgb(20, 162, 197);
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.7rem;
+}
+
+/******* Button *********/
+.btn{
+text-transform: uppercase;
+font-weight: 900;
+padding: 1.5rem;
+border-radius: 0.5rem;
+outline: none;
+border: none;
+}
+.btn--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.btn--red{
+    background: rgb(124, 43, 43);
+    color: white;
+}
+.btn--dark-blue{
+    background: rgb(1, 54, 61);
+    color: white;
+}
+.btn--green{
+    background: green;
+    color: white;
+}
+
+/******** Header **********/
