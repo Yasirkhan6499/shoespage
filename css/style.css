@@ -1,4 +1,5 @@
 /***** Genral **********/
+
 html{
     font-size: 62.5%;
 }
@@ -9,6 +10,9 @@ html{
 body{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.7rem;
+   
+
+ 
 }
 
 /******* Button *********/
@@ -38,3 +42,38 @@ border: none;
 }
 
 /******** Header **********/
+header{
+    height: 100vh;
+    background: url(/images/hero-page.png);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.header__content{
+    
+    z-index: 100;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+.header__content h1{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: clamp(4rem, 5.5vw, 6rem);
+    font-weight: 900;
+    margin: 0 2.5rem;
+    
+}
+.header__content p{
+    margin: 3rem 5rem;
+}
