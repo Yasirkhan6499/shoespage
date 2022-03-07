@@ -69,11 +69,90 @@ header{
 .header__content h1{
     margin-top: 0;
     text-transform: uppercase;
-    font-size: clamp(4rem, 5.5vw, 6rem);
+    font-size: clamp(4rem, 5.5vw, 7rem);
     font-weight: 900;
     margin: 0 2.5rem;
     
 }
 .header__content p{
     margin: 3rem 5rem;
+}
+
+/*---------Card -------*/
+/* main{
+    width: 70%;
+    margin: auto;
+}
+.card{
+    border-radius: 2rem;
+    padding: 5rem;
+  
+}
+.card--primary{
+    background-color: var(--color-primary);
+}
+.card__content{
+   
+text-align: left;
+    
+}
+.card__content h3{
+    font-size: clamp(4rem,8vw,9rem);
+    color: white;
+    margin-top: 0;
+ 
+}
+.card__content p{
+margin-top: -5rem;
+}
+.card__img{
+ width: 65%;
+shape-outside: url(/images/red_shoe.png);
+
+shape-margin: 1em;
+float: right;
+} */
+
+.card{
+    border-radius: 2rem;
+    padding: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.card--primary{
+    background: radial-gradient(var(--color-primary),rgb(202, 105, 26));
+}
+.card__img{
+    width: 100%;
+    margin-top: -6rem;
+}
+
+.card__content p {
+    margin: -2rem 0 3rem;
+
+    font-weight: 100;
+}
+.card__content h3{
+    font-size: clamp(3rem, calc(4.5vw + 1rem), 7rem);
+    color: white;
+    margin-top: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 850px) {
+    .card__img{
+        float: right;
+        width: 60%;
+        shape-outside: url(/images/red_shoe.png);
+        shape-margin: 7rem;
+        margin-right: -6rem;
+        margin-top: 0;
+    }
+        .card__content{
+            text-align: left;
+            
+        }
 }
