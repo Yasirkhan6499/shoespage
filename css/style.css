@@ -23,6 +23,10 @@ padding: 1.5rem;
 border-radius: 0.5rem;
 outline: none;
 border: none;
+cursor: pointer;
+
+transform: scale(1);
+transition: transform 0.2s;
 }
 .btn--primary{
     background-color: var(--color-primary);
@@ -39,6 +43,10 @@ border: none;
 .btn--green{
     background: green;
     color: white;
+}
+.btn:hover
+{
+transform: scale(1.2);
 }
 
 /******** Header **********/
@@ -113,16 +121,33 @@ shape-margin: 1em;
 float: right;
 } */
 
+/******** title **********/
+.title{
+    font-size: clamp(4rem,6vw,7rem);
+    text-align: center;
+    font-weight: 900;
+    margin: 7rem 0;
+}
+
+/******** Product Section ***********/
+
 .card{
     border-radius: 2rem;
     padding: 4rem;
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 5rem;
     position: relative;
     text-align: center;
 }
 .card--primary{
     background: radial-gradient(var(--color-primary),rgb(202, 105, 26));
+}
+.card--middle{
+    background: radial-gradient(rgb(240, 207, 146),rgb(247, 196, 103));
+}
+.card--secondary{
+    background: radial-gradient(var(--color-secondary),rgb(16, 134, 189));
 }
 .card__img{
     width: 100%;
@@ -143,6 +168,9 @@ float: right;
     text-transform: uppercase;
 }
 @media screen and (min-width: 850px) {
+    .card{
+        margin-bottom: 10rem;
+    }
     .card__img{
         float: right;
         width: 60%;
@@ -155,4 +183,51 @@ float: right;
             text-align: left;
             
         }
+        .card--middle .card__img{
+            float: left;
+            margin-left: -6rem;
+        }
+        .card--middle .card__content{
+            text-align: center;
+        }
+}
+
+/*********Feature Section****************/
+.feature{
+    /* Add flex layout or grid on these featured items */
+    text-align: center;
+}
+.feature__container{
+   
+    background: var(--color-secondary);
+    /* width: clamp(200px,30%,300px); */
+    width: fit-content;
+    border-radius:100%;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+.feature__img{
+    
+    width: 200px;
+   
+}
+.feature__content{
+opacity: 0;
+transition:all 0.2s;
+}
+.feature__price{
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+}
+.feature__name{
+    margin-top: 0.4rem;
+    color: rgb(102, 102, 102);
+}
+.feature__container:hover{
+    transform: scale(1.1);
+}
+.feature__container:hover ~ .feature__content{
+    opacity: 1;
 }
