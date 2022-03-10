@@ -170,7 +170,7 @@ float: right;
 }
 @media screen and (min-width: 850px) {
     .card{
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
     .card__img{
         float: right;
