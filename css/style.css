@@ -126,7 +126,8 @@ float: right;
     font-size: clamp(4rem,6vw,7rem);
     text-align: center;
     font-weight: 900;
-    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
 }
 
 /******** Product Section ***********/
@@ -197,17 +198,18 @@ float: right;
     /* Add flex layout or grid on these featured items */
     text-align: center;
     background-color: rgb(243, 243, 243);
-    height: 100vh;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   padding-top: 10rem;
+
+   
  
 }
 .feature__display{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 2em;
 }
 .feature__item{
     flex-basis: 20%;
